@@ -1,0 +1,297 @@
+format 224
+
+classcanvas 128002 class_ref 128002 // colheita
+  classdiagramsettings member_max_width 0 end
+  xyz 1223.83 407.616 2000
+end
+classcanvas 128130 class_ref 128130 // regiao
+  classdiagramsettings member_max_width 0 end
+  xyz 1459.45 1154.03 2000
+end
+classcanvas 128258 class_ref 128258 // vinha
+  classdiagramsettings member_max_width 0 end
+  xyz 904.611 475.124 2000
+end
+classcanvas 128386 class_ref 128386 // vinho
+  classdiagramsettings member_max_width 0 end
+  xyz 1216.37 1137.03 2000
+end
+classcanvas 128514 class_ref 128514 // edicao
+  classdiagramsettings member_max_width 0 end
+  xyz 346.664 662.685 2000
+end
+classcanvas 128642 class_ref 128642 // prémio
+  classdiagramsettings member_max_width 0 end
+  xyz 788.75 662.685 2000
+end
+classcanvas 128898 class_ref 128898 // casta
+  classdiagramsettings member_max_width 0 end
+  xyz 346.189 555.355 2000
+end
+classcanvas 129026 class_ref 129026 // trabalhador
+  classdiagramsettings member_max_width 0 end
+  xyz 1090.9 223.47 2000
+end
+classcanvas 130306 class_ref 129154 // produtor
+  classdiagramsettings member_max_width 0 end
+  xyz 836.318 103.259 2000
+end
+classcanvas 132994 class_ref 135810 // notasDegustacao
+  classdiagramsettings member_max_width 0 end
+  xyz 1212.39 934.641 2000
+end
+classcanvas 134146 class_ref 128386 // vinho
+  classdiagramsettings member_max_width 0 end
+  xyz 133.334 885.751 3005
+end
+classcanvas 134658 class_ref 128770 // enologos
+  classdiagramsettings member_max_width 0 end
+  xyz 1492.69 424.48 2000
+end
+classcanvas 141698 class_ref 136194 // plantação
+  classdiagramsettings member_max_width 0 end
+  xyz 981.813 584.88 2000
+end
+classcanvas 142978 class_ref 136322 // colaborador
+  classdiagramsettings member_max_width 0 end
+  xyz 1457.96 133.532 2000
+end
+classcanvas 145666 class_ref 136450 // info
+  classdiagramsettings member_max_width 0 end
+  xyz 1357.61 297.171 2000
+end
+classcanvas 150274 class_ref 136578 // cliente
+  classdiagramsettings member_max_width 0 end
+  xyz 544.338 747.424 2000
+end
+classcanvas 150402 class_ref 136706 // venda
+  classdiagramsettings member_max_width 0 end
+  xyz 403.643 923.365 2000
+end
+classcanvas 150530 class_ref 136834 // fatura
+  classdiagramsettings member_max_width 0 end
+  xyz 769.436 896.688 2000
+end
+classcanvas 151042 class_ref 136962 // linhaFatura
+  classdiagramsettings member_max_width 0 end
+  xyz 753.46 1008.98 2000
+end
+classcanvas 154370 class_ref 143618 // quantidade
+  classdiagramsettings member_max_width 0 end
+  xyz 328.254 994.332 2000
+end
+classcanvas 155138 class_ref 143746 // devolução
+  classdiagramsettings member_max_width 0 end
+  xyz 735.187 1157.83 2000
+end
+classcanvas 157442 class_ref 150274 // data
+  classdiagramsettings member_max_width 0 end
+  xyz 1088.18 1090.72 2006
+end
+classcanvas 157826 class_ref 150402 // tipoVinho
+  classdiagramsettings member_max_width 0 end
+  xyz 113.311 791.694 2000
+end
+classcanvas 160130 class_ref 150786 // tipoEdição
+  classdiagramsettings member_max_width 0 end
+  xyz 57.6009 671.16 2000
+end
+classcanvas 162946 class_ref 150914 // tipoCliente
+  classdiagramsettings member_max_width 0 end
+  xyz 770.537 766.86 2000
+end
+relationcanvas 129282 relation_ref 128002 // colheitaDe
+  from ref 128002 z 2001 to point 1566.64 815.66
+  line 169986 z 2001 label "colheitaDe" italic max_width 255 xyz 1503 811 2001 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 1540 1134 3000 multiplicity_b_pos 1339 510 3000
+end
+relationcanvas 129922 relation_ref 128386 // plantadas
+  decenter_end 841
+  from ref 128258 z 2001 label "plantadas" italic max_width 255 xyz 1138 471 2001 to ref 128002
+  no_role_a no_role_b
+  multiplicity_a_pos 1212 496 3000 multiplicity_b_pos 1115 496 3000
+end
+relationcanvas 132738 relation_ref 135554 // <association>
+  geometry VH unfixed
+  decenter_end 108
+  from ref 130306 z 2001 to point 940 415
+  line 169090 z 2001 to ref 128002
+  no_role_a no_role_b
+  multiplicity_a_pos 1203 428 3000 multiplicity_b_pos 922 238 3000
+end
+relationcanvas 134402 relation_ref 136578 // <association>
+  from ref 128898 z 2001 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 440 642 3000 multiplicity_b_pos 435 629 3000
+end
+relationcanvas 141570 relation_ref 138370 // castaDaVinha
+  geometry VH unfixed
+  from ref 128898 z 2001 label "castaDaVinha" italic max_width 255 xyz 366 519 2001 to point 447.02 504.88
+  line 163970 z 2001 to ref 128258
+  no_role_a no_role_b
+  multiplicity_a_pos 892 512 3000 multiplicity_b_pos 430 535 3000
+end
+relationcanvas 143106 relation_ref 138882 // <aggregation>
+  from ref 142978 z 2001 to ref 130306
+  no_role_a no_role_b
+  multiplicity_a_pos 1062 176 3000 multiplicity_b_pos 1438 174 3000
+end
+relationcanvas 143234 relation_ref 139010 // <generalisation>
+  decenter_begin 483
+  decenter_end 485
+  from ref 134658 z 2001 to ref 142978
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 144898 relation_ref 139522 // trabalha
+  decenter_end 59
+  from ref 129026 z 2001 label "trabalha" italic max_width 255 xyz 1187.5 357 2001 to ref 128002
+  no_role_a no_role_b
+  multiplicity_a_pos 1216 389 3000 multiplicity_b_pos 1216 325 3000
+end
+relationcanvas 145410 relation_ref 139650 // acompanha
+  from ref 134658 z 2001 label "acompanha" italic max_width 255 xyz 1423 428 2001 to ref 128002
+  no_role_a no_role_b
+  multiplicity_a_pos 1435 464 3000 multiplicity_b_pos 1472 464 3000
+end
+relationcanvas 150018 relation_ref 139906 // <generalisation>
+  geometry VHV unfixed
+  decenter_end 485
+  from ref 129026 z 2001 to point 1202 214.32
+  line 150914 z 2001 to point 1568 214.32
+  line 150146 z 2001 to ref 142978
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 151682 relation_ref 140674 // venda
+  from ref 150274 z 2001 to point 564.68 880.36
+  line 172034 z 2001 label "venda" italic max_width 255 xyz 523 867 2001 to point 515.66 882.32
+  line 172162 z 2001 to ref 150402
+  no_role_a no_role_b
+  multiplicity_a_pos 488 903 3000 multiplicity_b_pos 559 851 3000
+end
+relationcanvas 152706 relation_ref 141314 // compoe
+  decenter_begin 481
+  from ref 128386 z 2001 label "compoe" italic max_width 255 xyz 1319 1070 2001 to ref 132994
+  no_role_a no_role_b
+  multiplicity_a_pos 1294 1038 3000 multiplicity_b_pos 1292 1118 3000
+end
+relationcanvas 152834 relation_ref 141442 // variasLinhas
+  from ref 150530 z 2001 to point 842.12 986.24
+  line 169218 z 2001 label "variasLinhas" italic max_width 255 xyz 850 984 2001 to ref 151042
+  no_role_a no_role_b
+  multiplicity_a_pos 814 990 3000 multiplicity_b_pos 826 967 3000
+end
+relationcanvas 154242 relation_ref 148226 // compostaPor
+  from ref 128514 z 2001 label "compostaPor" italic max_width 255 xyz 630 688 2001 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 768 711 3000 multiplicity_b_pos 562 711 3000
+end
+relationcanvas 155266 relation_ref 154882 // <aggregation>
+  from ref 155138 z 2001 to ref 151042
+  no_role_a no_role_b
+  multiplicity_a_pos 817 1111 3000 multiplicity_b_pos 813 1137 3000
+end
+relationcanvas 155650 relation_ref 161410 // fatura
+  decenter_end 430
+  from ref 150530 z 2001 to point 732.32 944.08
+  line 169474 z 2001 label "fatura" italic max_width 255 xyz 649 929 2001 to ref 150402
+  no_role_a no_role_b
+  multiplicity_a_pos 607 951 3000 multiplicity_b_pos 754 942 3000
+end
+relationcanvas 155778 relation_ref 168194 // quantidade
+  decenter_begin 174
+  from ref 150402 z 3006 label "quantidade" italic max_width 255 xyz 334 916 3006 to ref 134146
+  no_role_a no_role_b
+  multiplicity_a_pos 344 941 3000 multiplicity_b_pos 382 941 3000
+end
+relationcanvas 156290 relation_ref 168450 // <association>
+  decenter_end 50
+  from ref 129026 z 2001 to point 1215.54 210.86
+  line 156418 z 2001 to point 1192.02 177.52
+  line 156546 z 2001 to point 1121.4 177.52
+  line 156674 z 2001 to ref 129026
+  role_a_pos 1116 201 3000 role_b_pos 1226 201 3000
+  multiplicity_a_pos 1075 201 3000 multiplicity_b_pos 1188 201 3000
+end
+relationcanvas 156802 relation_ref 168578 // produz
+  from ref 130306 z 2001 label "produz" italic max_width 255 xyz 421.5 155.5 2001 to point 46.16 171.8
+  line 168834 z 2001 to point 40.16 935.26
+  line 168962 z 2001 to ref 134146
+  no_role_a no_role_b
+  multiplicity_a_pos 112 944 3000 multiplicity_b_pos 814 177 3000
+end
+relationcanvas 157186 relation_ref 168706 // <association>
+  decenter_begin 916
+  from ref 134146 z 3006 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 394 749 3000 multiplicity_b_pos 301 867 3000
+end
+relationcanvas 157570 relation_ref 168834 // dataEngarrafamento
+  decenter_begin 509
+  from ref 157442 z 2007 label "dataEngarrafamento" italic max_width 255 xyz 1144 1110 2007 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 1204 1165 3000 multiplicity_b_pos 1156 1142 3000
+end
+relationcanvas 157954 relation_ref 168962 // tipo
+  decenter_begin 541
+  decenter_end 532
+  from ref 134146 z 3006 to point 229.38 854.88
+  line 172930 z 3006 label "tipo" italic max_width 255 xyz 205 839 3006 to point 202.92 853.9
+  line 172802 z 3006 to ref 157826
+  no_role_a no_role_b
+  multiplicity_a_pos 165 848 3000 multiplicity_b_pos 219 867 3000
+end
+relationcanvas 159746 relation_ref 169602 // dataDeVenda
+  decenter_end 855
+  from ref 157442 z 2007 to point 1114.68 1231.34
+  line 168322 z 2007 to point 739.18 1237.22
+  line 168450 z 2007 label "dataDeVenda" italic max_width 255 xyz 624 1040 2007 to ref 150402
+  no_role_a no_role_b
+  multiplicity_a_pos 553 977 3000 multiplicity_b_pos 1094 1179 3000
+end
+relationcanvas 160258 relation_ref 169730 // <association>
+  from ref 160130 z 2001 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 332 709 3000 multiplicity_b_pos 289 709 3000
+end
+relationcanvas 160386 relation_ref 169858 // atribuido em
+  decenter_begin 150
+  decenter_end 924
+  from ref 157442 z 2007 label "atribuido em" italic max_width 255 xyz 943 832 2007 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 957 750 3000 multiplicity_b_pos 1075 1073 3000
+end
+relationcanvas 161538 relation_ref 169986 // dataPlantacao
+  geometry VHV unfixed
+  decenter_begin 675
+  from ref 157442 z 2007 label "dataPlantacao" italic max_width 255 xyz 1051 751 2007 to point 1125 788.2
+  line 168578 z 2007 to point 1046 788.2
+  line 168706 z 2007 to ref 141698
+  no_role_a no_role_b
+  multiplicity_a_pos 1028 639 3000 multiplicity_b_pos 1106 1073 3000
+end
+relationcanvas 161922 relation_ref 170114 // dataDevolucao
+  from ref 157442 z 2013 label "dataDevolucao" italic max_width 255 xyz 960 1126 2013 to ref 155138
+  no_role_a no_role_b
+  multiplicity_a_pos 962 1170 3000 multiplicity_b_pos 1068 1141 3000
+end
+relationcanvas 163074 relation_ref 170242 // tipo
+  decenter_end 549
+  from ref 150274 z 2001 label "tipo" italic max_width 255 xyz 719 781 2001 to ref 162946
+  no_role_a no_role_b
+  multiplicity_a_pos 748 800 3000 multiplicity_b_pos 695 800 3000
+end
+relationcanvas 167938 relation_ref 168322 // origina
+  from ref 128130 z 2001 label "origina" italic max_width 255 xyz 1421 1165 2001 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 1418 1193 3000 multiplicity_b_pos 1445 1193 3000
+end
+line 141954 -_-_
+  from ref 141698 z 2002 to ref 141570
+line 147074 -_-_ decenter_end 465
+  from ref 145666 z 2002 to ref 144898
+line 155906 -_-_
+  from ref 154370 z 3007 to ref 155778
+end

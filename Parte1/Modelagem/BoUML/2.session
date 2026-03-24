@@ -1,0 +1,13 @@
+window_sizes 1898 1024 211 1681 971 0
+cleanlooks_style
+diagrams
+  active  classdiagram_ref 128002 // projeto
+    1705 1300 77 C-Landscape 81 0
+end
+show_stereotypes
+selected 
+  package_ref 129 // diagrama
+open
+  classview_ref 128002 // projeto
+end
+end
